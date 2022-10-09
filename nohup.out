@@ -1,0 +1,1042 @@
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 4.1
+Cutadapt seems to be using Python 3! Proceeding with multi-core enabled Cutadapt using 4 cores
+Parallel gzip (pigz) detected. Proceeding with multicore (de)compression using 4 cores
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/
+Writing report to '/nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.1
+Python version: 3.8.13
+Number of cores used for trimming: 4
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Running FastQC with the following extra arguments: '-t 16 --outdir /nas/homes/benyang/LiuLabCollab/01_fastqc/Trimmed'
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.1). Setting -j 4
+Writing final adapter and quality trimmed output to 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+This is cutadapt 4.1 with Python 3.8.13
+Command line parameters: -j 4 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 325.00 s (4 µs/read; 14.49 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              78,488,562
+Reads with adapters:                28,842,819 (36.7%)
+Reads written (passing filters):    78,488,562 (100.0%)
+
+Total basepairs processed: 5,965,130,712 bp
+Quality-trimmed:              44,627,426 bp (0.7%)
+Total written (filtered):  5,850,336,541 bp (98.1%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 28842819 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.3%
+  C: 29.4%
+  G: 26.0%
+  T: 25.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	19234992	19622140.5	0	19234992
+2	5609592	4905535.1	0	5609592
+3	2020797	1226383.8	0	2020797
+4	443144	306595.9	0	443144
+5	136755	76649.0	0	136755
+6	76183	19162.2	0	76183
+7	59040	4790.6	0	59040
+8	51148	1197.6	0	51148
+9	45777	299.4	0	44355 1422
+10	45820	74.9	1	43112 2708
+11	41999	18.7	1	40565 1434
+12	40535	4.7	1	39390 1145
+13	37871	4.7	1	37123 748
+14	41747	4.7	1	40807 940
+15	39571	4.7	1	38781 790
+16	58090	4.7	1	56915 1175
+17	25812	4.7	1	25271 541
+18	36637	4.7	1	35922 715
+19	35310	4.7	1	34712 598
+20	36652	4.7	1	35839 813
+21	37165	4.7	1	36382 783
+22	32975	4.7	1	32441 534
+23	35797	4.7	1	35187 610
+24	31788	4.7	1	31310 478
+25	35332	4.7	1	34923 409
+26	36591	4.7	1	36035 556
+27	38771	4.7	1	38117 654
+28	31674	4.7	1	31199 475
+29	35610	4.7	1	35141 469
+30	32341	4.7	1	31734 607
+31	32666	4.7	1	31976 690
+32	31740	4.7	1	31155 585
+33	29747	4.7	1	29100 647
+34	31566	4.7	1	30916 650
+35	28113	4.7	1	27473 640
+36	39685	4.7	1	38923 762
+37	23021	4.7	1	22552 469
+38	30783	4.7	1	30130 653
+39	30790	4.7	1	30430 360
+40	16545	4.7	1	16063 482
+41	14388	4.7	1	14097 291
+42	13552	4.7	1	13153 399
+43	9604	4.7	1	9283 321
+44	24087	4.7	1	23689 398
+45	6755	4.7	1	6086 669
+46	253	4.7	1	93 160
+47	604	4.7	1	134 470
+48	3453	4.7	1	3113 340
+49	635	4.7	1	352 283
+50	877	4.7	1	6 871
+51	265	4.7	1	11 254
+52	417	4.7	1	4 413
+53	328	4.7	1	10 318
+54	280	4.7	1	4 276
+55	394	4.7	1	10 384
+56	262	4.7	1	11 251
+57	341	4.7	1	34 307
+58	232	4.7	1	3 229
+59	313	4.7	1	0 313
+60	475	4.7	1	0 475
+61	189	4.7	1	0 189
+62	398	4.7	1	12 386
+63	400	4.7	1	1 399
+64	209	4.7	1	4 205
+65	190	4.7	1	1 189
+66	351	4.7	1	3 348
+67	397	4.7	1	25 372
+68	880	4.7	1	26 854
+69	186	4.7	1	0 186
+70	346	4.7	1	3 343
+71	167	4.7	1	0 167
+72	351	4.7	1	3 348
+73	476	4.7	1	19 457
+74	392	4.7	1	10 382
+75	115	4.7	1	1 114
+76	85	4.7	1	0 85
+
+RUN STATISTICS FOR INPUT FILE: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001.fastq.gz
+=============================================
+78488562 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	294403 (0.4%)
+
+
+  >>> Now running FastQC on the data <<<
+
+Picked up _JAVA_OPTIONS: -Xms256M -Xmx728M -XX:ParallelGCThreads=1
+Started analysis of 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 5% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 10% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 15% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 20% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 25% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 30% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 35% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 40% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 45% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 50% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 55% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 60% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 65% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 70% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 75% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 80% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 85% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 90% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Approx 95% complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Analysis complete for 7016-BY-1_TAAGGCGA-CTCTCTAT_S1_R1_001_trimmed.fq.gz
+Writing report to '/nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.1
+Python version: 3.8.13
+Number of cores used for trimming: 4
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Running FastQC with the following extra arguments: '-t 16 --outdir /nas/homes/benyang/LiuLabCollab/01_fastqc/Trimmed'
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.1). Setting -j -j 4
+Writing final adapter and quality trimmed output to 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+This is cutadapt 4.1 with Python 3.8.13
+Command line parameters: -j 4 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 378.11 s (4 µs/read; 14.85 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              93,579,049
+Reads with adapters:                34,742,089 (37.1%)
+Reads written (passing filters):    93,579,049 (100.0%)
+
+Total basepairs processed: 7,112,007,724 bp
+Quality-trimmed:              50,826,815 bp (0.7%)
+Total written (filtered):  6,962,730,002 bp (97.9%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 34742089 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.2%
+  C: 29.7%
+  G: 26.0%
+  T: 25.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22701412	23394762.2	0	22701412
+2	6631885	5848690.6	0	6631885
+3	2392748	1462172.6	0	2392748
+4	540950	365543.2	0	540950
+5	178055	91385.8	0	178055
+6	107660	22846.4	0	107660
+7	88668	5711.6	0	88668
+8	80153	1427.9	0	80153
+9	71823	357.0	0	70120 1703
+10	72911	89.2	1	69489 3422
+11	68903	22.3	1	66868 2035
+12	63734	5.6	1	62026 1708
+13	60460	5.6	1	59456 1004
+14	67992	5.6	1	66515 1477
+15	63436	5.6	1	62336 1100
+16	95834	5.6	1	94050 1784
+17	40649	5.6	1	39898 751
+18	60073	5.6	1	59006 1067
+19	57582	5.6	1	56672 910
+20	61484	5.6	1	60226 1258
+21	61608	5.6	1	60467 1141
+22	54831	5.6	1	53908 923
+23	59864	5.6	1	59036 828
+24	52840	5.6	1	52256 584
+25	58787	5.6	1	58190 597
+26	61190	5.6	1	60512 678
+27	62858	5.6	1	61812 1046
+28	56462	5.6	1	55594 868
+29	60852	5.6	1	60236 616
+30	55162	5.6	1	54232 930
+31	56155	5.6	1	55129 1026
+32	58478	5.6	1	57531 947
+33	48740	5.6	1	47799 941
+34	53543	5.6	1	52607 936
+35	50927	5.6	1	50025 902
+36	53417	5.6	1	52416 1001
+37	68474	5.6	1	67475 999
+38	53037	5.6	1	52103 934
+39	35567	5.6	1	35154 413
+40	45753	5.6	1	45175 578
+41	18004	5.6	1	17659 345
+42	30914	5.6	1	30302 612
+43	9306	5.6	1	8916 390
+44	41526	5.6	1	41066 460
+45	7857	5.6	1	7100 757
+46	392	5.6	1	190 202
+47	688	5.6	1	200 488
+48	5813	5.6	1	5440 373
+49	1415	5.6	1	1067 348
+50	946	5.6	1	62 884
+51	379	5.6	1	77 302
+52	507	5.6	1	18 489
+53	421	5.6	1	33 388
+54	294	5.6	1	14 280
+55	512	5.6	1	19 493
+56	265	5.6	1	3 262
+57	395	5.6	1	39 356
+58	322	5.6	1	8 314
+59	395	5.6	1	18 377
+60	516	5.6	1	5 511
+61	259	5.6	1	4 255
+62	524	5.6	1	20 504
+63	405	5.6	1	1 404
+64	313	5.6	1	2 311
+65	253	5.6	1	5 248
+66	384	5.6	1	7 377
+67	506	5.6	1	44 462
+68	1091	5.6	1	37 1054
+69	241	5.6	1	3 238
+70	370	5.6	1	2 368
+71	161	5.6	1	2 159
+72	409	5.6	1	2 407
+73	616	5.6	1	12 604
+74	489	5.6	1	6 483
+75	136	5.6	1	0 136
+76	108	5.6	1	0 108
+
+RUN STATISTICS FOR INPUT FILE: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001.fastq.gz
+=============================================
+93579049 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	324708 (0.3%)
+
+
+  >>> Now running FastQC on the data <<<
+
+Picked up _JAVA_OPTIONS: -Xms256M -Xmx728M -XX:ParallelGCThreads=1
+Started analysis of 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 5% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 10% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 15% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 20% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 25% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 30% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 35% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 40% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 45% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 50% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 55% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 60% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 65% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 70% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 75% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 80% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 85% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 90% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Approx 95% complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Analysis complete for 7016-BY-2_CGTACTAG-CTCTCTAT_S2_R1_001_trimmed.fq.gz
+Writing report to '/nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.1
+Python version: 3.8.13
+Number of cores used for trimming: 4
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Running FastQC with the following extra arguments: '-t 16 --outdir /nas/homes/benyang/LiuLabCollab/01_fastqc/Trimmed'
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.1). Setting -j -j 4
+Writing final adapter and quality trimmed output to 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+This is cutadapt 4.1 with Python 3.8.13
+Command line parameters: -j 4 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 395.51 s (4 µs/read; 14.74 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              97,134,631
+Reads with adapters:                34,848,932 (35.9%)
+Reads written (passing filters):    97,134,631 (100.0%)
+
+Total basepairs processed: 7,382,231,956 bp
+Quality-trimmed:              57,293,890 bp (0.8%)
+Total written (filtered):  7,224,502,147 bp (97.9%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 34848932 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.8%
+  C: 29.1%
+  G: 25.4%
+  T: 25.5%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22604672	24283657.8	0	22604672
+2	6723137	6070914.4	0	6723137
+3	2391784	1517728.6	0	2391784
+4	551615	379432.2	0	551615
+5	181788	94858.0	0	181788
+6	112397	23714.5	0	112397
+7	94967	5928.6	0	94967
+8	89411	1482.2	0	89411
+9	79182	370.5	0	77304 1878
+10	75946	92.6	1	72430 3516
+11	68327	23.2	1	66079 2248
+12	72420	5.8	1	70347 2073
+13	64010	5.8	1	62993 1017
+14	71334	5.8	1	69704 1630
+15	67387	5.8	1	66186 1201
+16	77353	5.8	1	75639 1714
+17	66088	5.8	1	64890 1198
+18	65961	5.8	1	64773 1188
+19	64370	5.8	1	63365 1005
+20	60575	5.8	1	59229 1346
+21	63743	5.8	1	62387 1356
+22	57503	5.8	1	56537 966
+23	60899	5.8	1	60036 863
+24	54783	5.8	1	54144 639
+25	61207	5.8	1	60404 803
+26	63163	5.8	1	62418 745
+27	66382	5.8	1	65184 1198
+28	56408	5.8	1	55485 923
+29	62125	5.8	1	61285 840
+30	56657	5.8	1	55664 993
+31	57409	5.8	1	56281 1128
+32	57484	5.8	1	56463 1021
+33	52349	5.8	1	51202 1147
+34	52118	5.8	1	51239 879
+35	53302	5.8	1	52250 1052
+36	54759	5.8	1	53798 961
+37	54342	5.8	1	53468 874
+38	58519	5.8	1	57417 1102
+39	45765	5.8	1	45267 498
+40	37245	5.8	1	36696 549
+41	25985	5.8	1	25570 415
+42	21825	5.8	1	21237 588
+43	17725	5.8	1	17268 457
+44	34534	5.8	1	34037 497
+45	19659	5.8	1	18848 811
+46	416	5.8	1	206 210
+47	711	5.8	1	241 470
+48	5320	5.8	1	4898 422
+49	1694	5.8	1	1297 397
+50	1080	5.8	1	42 1038
+51	459	5.8	1	126 333
+52	580	5.8	1	82 498
+53	493	5.8	1	33 460
+54	300	5.8	1	21 279
+55	524	5.8	1	44 480
+56	310	5.8	1	5 305
+57	417	5.8	1	41 376
+58	301	5.8	1	3 298
+59	391	5.8	1	7 384
+60	586	5.8	1	1 585
+61	312	5.8	1	4 308
+62	444	5.8	1	9 435
+63	524	5.8	1	3 521
+64	313	5.8	1	5 308
+65	340	5.8	1	8 332
+66	385	5.8	1	8 377
+67	550	5.8	1	32 518
+68	1220	5.8	1	33 1187
+69	252	5.8	1	3 249
+70	401	5.8	1	1 400
+71	186	5.8	1	0 186
+72	412	5.8	1	3 409
+73	587	5.8	1	11 576
+74	538	5.8	1	20 518
+75	162	5.8	1	2 160
+76	110	5.8	1	0 110
+
+RUN STATISTICS FOR INPUT FILE: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001.fastq.gz
+=============================================
+97134631 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	384730 (0.4%)
+
+
+  >>> Now running FastQC on the data <<<
+
+Picked up _JAVA_OPTIONS: -Xms256M -Xmx728M -XX:ParallelGCThreads=1
+Started analysis of 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 5% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 10% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 15% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 20% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 25% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 30% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 35% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 40% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 45% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 50% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 55% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 60% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 65% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 70% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 75% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 80% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 85% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 90% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Approx 95% complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Analysis complete for 7016-BY-3_AGGCAGAA-CTCTCTAT_S3_R1_001_trimmed.fq.gz
+Writing report to '/nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.1
+Python version: 3.8.13
+Number of cores used for trimming: 4
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Running FastQC with the following extra arguments: '-t 16 --outdir /nas/homes/benyang/LiuLabCollab/01_fastqc/Trimmed'
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.1). Setting -j -j 4
+Writing final adapter and quality trimmed output to 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+This is cutadapt 4.1 with Python 3.8.13
+Command line parameters: -j 4 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 344.67 s (4 µs/read; 14.83 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              85,185,813
+Reads with adapters:                31,022,670 (36.4%)
+Reads written (passing filters):    85,185,813 (100.0%)
+
+Total basepairs processed: 6,474,121,788 bp
+Quality-trimmed:              51,625,569 bp (0.8%)
+Total written (filtered):  6,319,386,754 bp (97.6%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 31022670 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.8%
+  C: 28.9%
+  G: 25.3%
+  T: 25.9%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	19564713	21296453.2	0	19564713
+2	5905134	5324113.3	0	5905134
+3	2099957	1331028.3	0	2099957
+4	516048	332757.1	0	516048
+5	180576	83189.3	0	180576
+6	122577	20797.3	0	122577
+7	100798	5199.3	0	100798
+8	97936	1299.8	0	97936
+9	87783	325.0	0	86097 1686
+10	89027	81.2	1	85694 3333
+11	82975	20.3	1	80745 2230
+12	80617	5.1	1	78715 1902
+13	74343	5.1	1	73391 952
+14	83236	5.1	1	81387 1849
+15	78273	5.1	1	77082 1191
+16	114035	5.1	1	111899 2136
+17	52680	5.1	1	51793 887
+18	73229	5.1	1	71950 1279
+19	69964	5.1	1	68842 1122
+20	75449	5.1	1	73952 1497
+21	74290	5.1	1	72852 1438
+22	66245	5.1	1	65307 938
+23	73224	5.1	1	72469 755
+24	63978	5.1	1	63400 578
+25	71311	5.1	1	70595 716
+26	74110	5.1	1	73397 713
+27	76902	5.1	1	75724 1178
+28	66482	5.1	1	65500 982
+29	73653	5.1	1	72949 704
+30	65255	5.1	1	64315 940
+31	68151	5.1	1	67061 1090
+32	65649	5.1	1	64715 934
+33	60877	5.1	1	59814 1063
+34	63206	5.1	1	62193 1013
+35	59371	5.1	1	58450 921
+36	64274	5.1	1	63245 1029
+37	64701	5.1	1	63707 994
+38	65889	5.1	1	64729 1160
+39	54270	5.1	1	53840 430
+40	44823	5.1	1	44311 512
+41	35446	5.1	1	35032 414
+42	23844	5.1	1	23379 465
+43	21664	5.1	1	21263 401
+44	47694	5.1	1	47178 516
+45	9170	5.1	1	8463 707
+46	353	5.1	1	150 203
+47	530	5.1	1	115 415
+48	5407	5.1	1	5016 391
+49	1792	5.1	1	1456 336
+50	913	5.1	1	56 857
+51	483	5.1	1	133 350
+52	424	5.1	1	33 391
+53	445	5.1	1	27 418
+54	299	5.1	1	18 281
+55	509	5.1	1	26 483
+56	268	5.1	1	10 258
+57	272	5.1	1	19 253
+58	210	5.1	1	2 208
+59	364	5.1	1	8 356
+60	695	5.1	1	4 691
+61	265	5.1	1	1 264
+62	444	5.1	1	11 433
+63	383	5.1	1	2 381
+64	251	5.1	1	0 251
+65	272	5.1	1	2 270
+66	453	5.1	1	3 450
+67	472	5.1	1	31 441
+68	1060	5.1	1	33 1027
+69	247	5.1	1	2 245
+70	368	5.1	1	1 367
+71	136	5.1	1	0 136
+72	375	5.1	1	2 373
+73	515	5.1	1	6 509
+74	358	5.1	1	0 358
+75	156	5.1	1	3 153
+76	122	5.1	1	0 122
+
+RUN STATISTICS FOR INPUT FILE: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001.fastq.gz
+=============================================
+85185813 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	327228 (0.4%)
+
+
+  >>> Now running FastQC on the data <<<
+
+Picked up _JAVA_OPTIONS: -Xms256M -Xmx728M -XX:ParallelGCThreads=1
+Started analysis of 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 5% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 10% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 15% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 20% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 25% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 30% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 35% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 40% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 45% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 50% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 55% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 60% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 65% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 70% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 75% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 80% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 85% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 90% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Approx 95% complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Analysis complete for 7016-BY-4_TCCTGAGC-CTCTCTAT_S4_R1_001_trimmed.fq.gz
+Writing report to '/nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.1
+Python version: 3.8.13
+Number of cores used for trimming: 4
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Running FastQC with the following extra arguments: '-t 16 --outdir /nas/homes/benyang/LiuLabCollab/01_fastqc/Trimmed'
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.1). Setting -j -j 4
+Writing final adapter and quality trimmed output to 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+This is cutadapt 4.1 with Python 3.8.13
+Command line parameters: -j 4 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 319.27 s (4 µs/read; 14.71 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              78,291,922
+Reads with adapters:                28,684,957 (36.6%)
+Reads written (passing filters):    78,291,922 (100.0%)
+
+Total basepairs processed: 5,950,186,072 bp
+Quality-trimmed:              41,697,492 bp (0.7%)
+Total written (filtered):  5,831,956,207 bp (98.0%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 28684957 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.5%
+  C: 29.1%
+  G: 25.8%
+  T: 25.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	18794108	19572980.5	0	18794108
+2	5578241	4893245.1	0	5578241
+3	2002134	1223311.3	0	2002134
+4	460305	305827.8	0	460305
+5	145862	76457.0	0	145862
+6	87585	19114.2	0	87585
+7	68880	4778.6	0	68880
+8	61672	1194.6	0	61672
+9	55957	298.7	0	54341 1616
+10	55581	74.7	1	52648 2933
+11	51473	18.7	1	49821 1652
+12	51825	4.7	1	50596 1229
+13	47995	4.7	1	47208 787
+14	51493	4.7	1	50445 1048
+15	48173	4.7	1	47347 826
+16	54654	4.7	1	53550 1104
+17	46970	4.7	1	46147 823
+18	47122	4.7	1	46301 821
+19	51612	4.7	1	50818 794
+20	37094	4.7	1	36294 800
+21	45772	4.7	1	44950 822
+22	40415	4.7	1	39832 583
+23	43700	4.7	1	43110 590
+24	39880	4.7	1	39473 407
+25	42983	4.7	1	42475 508
+26	43846	4.7	1	43271 575
+27	44656	4.7	1	43892 764
+28	41810	4.7	1	41196 614
+29	44060	4.7	1	43553 507
+30	40289	4.7	1	39558 731
+31	41019	4.7	1	40277 742
+32	43911	4.7	1	43186 725
+33	32872	4.7	1	32159 713
+34	37091	4.7	1	36383 708
+35	38116	4.7	1	37416 700
+36	42862	4.7	1	42095 767
+37	53009	4.7	1	52110 899
+38	19255	4.7	1	18765 490
+39	32769	4.7	1	32401 368
+40	26281	4.7	1	25784 497
+41	16527	4.7	1	16240 287
+42	15839	4.7	1	15409 430
+43	10885	4.7	1	10552 333
+44	29929	4.7	1	29545 384
+45	4149	4.7	1	3571 578
+46	300	4.7	1	92 208
+47	478	4.7	1	70 408
+48	3235	4.7	1	2914 321
+49	828	4.7	1	550 278
+50	818	4.7	1	23 795
+51	373	4.7	1	71 302
+52	372	4.7	1	14 358
+53	340	4.7	1	15 325
+54	236	4.7	1	12 224
+55	405	4.7	1	19 386
+56	294	4.7	1	4 290
+57	331	4.7	1	61 270
+58	244	4.7	1	2 242
+59	327	4.7	1	4 323
+60	433	4.7	1	1 432
+61	217	4.7	1	2 215
+62	346	4.7	1	8 338
+63	369	4.7	1	5 364
+64	243	4.7	1	2 241
+65	223	4.7	1	2 221
+66	336	4.7	1	4 332
+67	453	4.7	1	58 395
+68	1066	4.7	1	52 1014
+69	221	4.7	1	2 219
+70	302	4.7	1	3 299
+71	129	4.7	1	1 128
+72	302	4.7	1	7 295
+73	487	4.7	1	23 464
+74	383	4.7	1	7 376
+75	127	4.7	1	3 124
+76	78	4.7	1	1 77
+
+RUN STATISTICS FOR INPUT FILE: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001.fastq.gz
+=============================================
+78291922 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	284722 (0.4%)
+
+
+  >>> Now running FastQC on the data <<<
+
+Picked up _JAVA_OPTIONS: -Xms256M -Xmx728M -XX:ParallelGCThreads=1
+Started analysis of 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 5% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 10% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 15% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 20% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 25% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 30% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 35% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 40% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 45% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 50% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 55% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 60% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 65% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 70% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 75% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 80% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 85% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 90% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Approx 95% complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Analysis complete for 7016-BY-5_GGACTCCT-CTCTCTAT_S5_R1_001_trimmed.fq.gz
+Writing report to '/nas/homes/benyang/LiuLabCollab/02_trimmed_fastqs/7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001.fastq.gz
+Trimming mode: single-end
+Trim Galore version: 0.6.7
+Cutadapt version: 4.1
+Python version: 3.8.13
+Number of cores used for trimming: 4
+Quality Phred score cutoff: 30
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Running FastQC with the following extra arguments: '-t 16 --outdir /nas/homes/benyang/LiuLabCollab/01_fastqc/Trimmed'
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.1). Setting -j -j 4
+Writing final adapter and quality trimmed output to 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 30') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001.fastq.gz <<< 
+10000000 sequences processed
+20000000 sequences processed
+30000000 sequences processed
+40000000 sequences processed
+50000000 sequences processed
+60000000 sequences processed
+70000000 sequences processed
+80000000 sequences processed
+90000000 sequences processed
+This is cutadapt 4.1 with Python 3.8.13
+Command line parameters: -j 4 -e 0.1 -q 30 -O 1 -a CTGTCTCTTATA /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001.fastq.gz
+Processing single-end reads on 4 cores ...
+Finished in 379.11 s (4 µs/read; 15.09 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              95,372,763
+Reads with adapters:                34,723,568 (36.4%)
+Reads written (passing filters):    95,372,763 (100.0%)
+
+Total basepairs processed: 7,248,329,988 bp
+Quality-trimmed:              56,348,664 bp (0.8%)
+Total written (filtered):  7,087,247,446 bp (97.8%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 34723568 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 19.6%
+  C: 29.6%
+  G: 25.7%
+  T: 25.1%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	22455887	23843190.8	0	22455887
+2	6597200	5960797.7	0	6597200
+3	2361543	1490199.4	0	2361543
+4	541549	372549.9	0	541549
+5	182129	93137.5	0	182129
+6	114779	23284.4	0	114779
+7	98922	5821.1	0	98922
+8	94621	1455.3	0	94621
+9	83575	363.8	0	81953 1622
+10	80301	91.0	1	76795 3506
+11	71921	22.7	1	69706 2215
+12	77685	5.7	1	75439 2246
+13	67089	5.7	1	66128 961
+14	75652	5.7	1	74093 1559
+15	72152	5.7	1	71000 1152
+16	82666	5.7	1	80909 1757
+17	69411	5.7	1	68271 1140
+18	71111	5.7	1	69944 1167
+19	73598	5.7	1	72486 1112
+20	59960	5.7	1	58701 1259
+21	68891	5.7	1	67537 1354
+22	62526	5.7	1	61576 950
+23	65295	5.7	1	64508 787
+24	59119	5.7	1	58528 591
+25	67707	5.7	1	66956 751
+26	68651	5.7	1	67929 722
+27	70553	5.7	1	69389 1164
+28	63889	5.7	1	62908 981
+29	67459	5.7	1	66747 712
+30	61139	5.7	1	60161 978
+31	64557	5.7	1	63369 1188
+32	63107	5.7	1	62174 933
+33	58369	5.7	1	57193 1176
+34	57642	5.7	1	56669 973
+35	60102	5.7	1	59174 928
+36	56477	5.7	1	55499 978
+37	64073	5.7	1	63070 1003
+38	60655	5.7	1	59558 1097
+39	59774	5.7	1	59229 545
+40	39409	5.7	1	38811 598
+41	28059	5.7	1	27655 404
+42	29246	5.7	1	28742 504
+43	17007	5.7	1	16588 419
+44	52087	5.7	1	51570 517
+45	6658	5.7	1	5918 740
+46	360	5.7	1	164 196
+47	729	5.7	1	246 483
+48	6324	5.7	1	5921 403
+49	947	5.7	1	607 340
+50	1085	5.7	1	14 1071
+51	509	5.7	1	107 402
+52	450	5.7	1	22 428
+53	426	5.7	1	16 410
+54	329	5.7	1	17 312
+55	476	5.7	1	23 453
+56	270	5.7	1	8 262
+57	377	5.7	1	37 340
+58	280	5.7	1	9 271
+59	353	5.7	1	11 342
+60	655	5.7	1	7 648
+61	252	5.7	1	6 246
+62	393	5.7	1	18 375
+63	457	5.7	1	1 456
+64	256	5.7	1	4 252
+65	228	5.7	1	9 219
+66	379	5.7	1	11 368
+67	406	5.7	1	34 372
+68	1035	5.7	1	29 1006
+69	255	5.7	1	4 251
+70	368	5.7	1	5 363
+71	143	5.7	1	0 143
+72	378	5.7	1	1 377
+73	643	5.7	1	4 639
+74	359	5.7	1	5 354
+75	162	5.7	1	3 159
+76	82	5.7	1	0 82
+
+RUN STATISTICS FOR INPUT FILE: /nas/homes/benyang/LiuLabCollab/7016-BY/fastqs_7016-BY/7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001.fastq.gz
+=============================================
+95372763 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	374433 (0.4%)
+
+
+  >>> Now running FastQC on the data <<<
+
+Picked up _JAVA_OPTIONS: -Xms256M -Xmx728M -XX:ParallelGCThreads=1
+Started analysis of 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 5% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 10% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 15% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 20% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 25% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 30% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 35% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 40% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 45% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 50% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 55% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 60% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 65% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 70% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 75% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 80% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 85% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 90% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Approx 95% complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
+Analysis complete for 7016-BY-6_TAGGCATG-CTCTCTAT_S6_R1_001_trimmed.fq.gz
